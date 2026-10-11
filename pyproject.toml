@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsq-schedules"
+version = "1.0.0"
+description = "Exact and asymptotic risk of learning-rate schedules for least squares under Slock's model"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Noé Colomban" },
+    { name = "Francis Bach" },
+    { name = "Fabian Schaipp" },
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["lsq_schedules*", "scheduled*", "experiments*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
