@@ -10,7 +10,7 @@ a single eigendirection), with power-law source and capacity conditions. The cod
 
 * the **exact finite-time risk** $\mathcal R_{t\mid T} = B_{t\mid T} + V_{t\mid T}$ of SGD for any schedule
   (Theorem 3.1 / Corollary F.4), together with Monte-Carlo SGD simulations;
-* the **asymptotic equivalents** $\widetilde B_T, \widetilde V_T$ for the constant and WSD schedules
+* the **asymptotic equivalents** $\widetilde B_T$ and $\widetilde V_T$ for the constant and WSD schedules
   (Theorems 4.2 and 4.3), and the asymptotically optimal base learning-rate $\widetilde\gamma^*_T$ (Table 2);
 * the extension to a **batch size** $b$ and the critical batch size (Appendix B);
 * the exact risk under **Gaussian features**, for comparison (Appendix D).
